@@ -296,15 +296,15 @@ h2 {
     margin-top: 6%;
   }
   .project-title {
-    font-size: 1.5rem; /* Smaller font size for the title on small screens */
+    font-size: 1.5rem;
   }
 
   .project-content h5 {
-    font-size: 1.1rem; /* Slightly smaller font size for content titles */
+    font-size: 1.1rem;
   }
 
   .project-content p {
-    font-size: 0.85rem; /* Smaller font size for content paragraphs */
+    font-size: 0.85rem;
   }
   .choice-cnt {
     width: 85%;

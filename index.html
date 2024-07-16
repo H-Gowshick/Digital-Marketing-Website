@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Marketing Agency</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -347,10 +349,7 @@
             />
           </div>
           <div class="col-12 col-md-6 choice-cnt">
-            <div
-              class="project-content p-4"
-              onclick="changeImage('project-2.jpg')"
-            >
+            <div class="project-content p-4" data-image="project-2.jpg">
               <h6>Genderless Kei - Japan's Hot</h6>
               <p class="mb-0">
                 Set to launch on the manufacturer's new A330neo aircraft in
@@ -359,7 +358,7 @@
             </div>
             <div
               class="project-content p-4 active-content"
-              onclick="changeImage('project-1.png')"
+              data-image="project-1.png"
             >
               <h6>Better Strategy & Quality</h6>
               <p class="mb-0">
@@ -367,10 +366,7 @@
                 2017, it's offering lots of
               </p>
             </div>
-            <div
-              class="project-content mb-3 p-4"
-              onclick="changeImage('project-3.jpg')"
-            >
+            <div class="project-content mb-3 p-4" data-image="project-3.jpg">
               <h6>Genderless Kei - Japan's Hot</h6>
               <p class="mb-0">
                 Set to launch on the manufacturer's new A330neo aircraft in
@@ -473,7 +469,13 @@
       <!--footer end-->
 
       <!-- Contact Modal -->
-      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header border-0">
